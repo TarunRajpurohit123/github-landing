@@ -919,6 +919,16 @@ background-color: white;
     .orangeVobosd{
       width: 29.5%;
     }
+    .thankspops{
+      display: flex;
+    }
+    .typ-image{
+      width: 40%;
+    }
+    .thankspops-content{
+      display: flex;
+      justify-content: center;
+    }
     </style>
   </head>
   <body>
@@ -944,7 +954,14 @@ background-color: white;
           </div>
          </div>
         <!-- dialog 3 end -->
-         
+
+        <!-- thanks popup -->
+        <div class="dialog thankspops">
+          <div class="dialog-content thankspops-content" >
+            <img src="./typ.jpg" alt="specification" class="typ-image"/>
+          </div>
+         </div>
+        <!-- thanks popup end-->
 
       <!-- hero section -->
       <div class="hero-landing-jkaXky">
@@ -1307,7 +1324,12 @@ background-color: white;
        const redLinkDgdksl = document.querySelector(".red-link-Dgdksl");
        const redLinkDgdksl2 = document.querySelector(".red-link-Dgdksl2");
        const redLinkDgdksl3 = document.querySelector(".red-link-Dgdksl3");
+       const thanDialog = document.querySelector(".thankspops");
 
+       thanDialog.addEventListener('click',()=>{
+        thanDialog.style.display="none";
+        window.location.href="index.html"
+       })
       //  thumbnail 1
        thumbSec1?.forEach((t,ind)=>{
         

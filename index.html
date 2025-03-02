@@ -935,7 +935,7 @@ background-color: white;
         <div class="mancoolers-SDsduw--inner">
           
           <div class="left-mancoolers">
-            <img src="./pp1.png" alt="mcimage1" class="mcimage1" id="section_feature_1" />
+            <img src="./pp1.png" alt="mcimage1" class="mcimage1 imagekionesakhya" id="section_feature_1" />
             <div class="product-title-jsbdsDSD " id="section_feature_1_label">Wall-mounted fans</div>
             <div class="product-medias-tracks">
               <img
@@ -1259,6 +1259,7 @@ background-color: white;
   </div>
     <script>
        const thumbSec1 = document.querySelectorAll(".thumb-sec1");
+       const imagekionesakhya = document.querySelector(".imagekionesakhya");
        const thumbSec2 = document.querySelectorAll(".mcimages2");
        const thumbSec3 = document.querySelectorAll(".mcimages3");
        const sectionFeature1 = document.getElementById("section_feature_1");
@@ -1289,14 +1290,19 @@ background-color: white;
 
           if(ind===0){
             section_feature_1_label.innerHTML = "Wall-mounted fans"
+              sectionFeature1.style.width="50%";
           }
 
           if(ind===1){
             section_feature_1_label.innerHTML = "Pedestal Mancoolers"
+          sectionFeature1.style.width="25%";
+
           }
 
           if(ind===2){
             section_feature_1_label.innerHTML = "Tubular Mancoolers"
+          sectionFeature1.style.width="50%";
+
           }
 
         })

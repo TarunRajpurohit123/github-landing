@@ -732,8 +732,15 @@ background-color: white;
           top: 0rem !important;
           font-size: 1.3rem !important;
          }
+        #loko3{
+          top: 0 !important;
+          font-size: 1.3rem !important;
+         }
      }
-
+     #loko3{
+          top: 0 !important;
+          font-size: 1.3rem !important;
+         }
      @media(max-width:400px){
       .left-mancoolers{
           width: 95%;
@@ -1000,7 +1007,8 @@ background-color: white;
       <!-- dialog 2 end -->
         <!-- dialog 3 -->
         <div class="dialog dialog3">
-          <div class="dialog-content dialog-content33 " style="width:32%;">
+          <div class="dialog-content dialog-content33 " style="width:32%;position: relative;">
+            <div style="position: absolute;right: 1rem; top: 1rem;font-size: 1.5rem;cursor: pointer;" id="loko3">X</div>
             <img src="./d3.jpg" alt="specification" class="di3image di3kiimage"/>
           </div>
          </div>
@@ -1370,6 +1378,7 @@ background-color: white;
        const dialog3 = document.querySelector(".dialog3");
        const dialog11 = document.querySelector("#loko1");
        const dialog22 = document.querySelector("#loko2");
+       const dialog33 = document.querySelector("#loko3");
        const redLinkDgdksl = document.querySelector(".red-link-Dgdksl");
        const redLinkDgdksl2 = document.querySelector(".red-link-Dgdksl2");
        const redLinkDgdksl3 = document.querySelector(".red-link-Dgdksl3");
@@ -1455,7 +1464,7 @@ background-color: white;
         dialog2.style.display="flex";
        })
 
-       dialog3.addEventListener("click",()=>{
+       dialog33.addEventListener("click",()=>{
         dialog3.style.display="none";
        });
 

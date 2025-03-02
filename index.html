@@ -1397,30 +1397,6 @@ background-color: white;
         dialog3.style.display="flex";
        })
 
-// mail
-document.addEventListener("DOMContentLoaded", function () {
-  const formData = {};
-
-  // Select all input and textarea elements
-  document.querySelectorAll("input, textarea").forEach((element) => {
-    element.addEventListener("input", (event) => {
-      formData[event.target.name] = event.target.value;
-    });
-  });
-
-  function openGmailCompose() {
-    const subject = encodeURIComponent("Inquiry Details");
-    const body = encodeURIComponent(
-      `Name: ${formData.name || ""}\nPhone: ${formData.phone || ""}\nEmail: ${formData.email || ""}\n\nQuery:\n${formData.textarea || ""}`
-    );
-
-    const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=&su=${subject}&body=${body}`;
-    window.open(mailtoLink, "_blank");
-  }
-
-  document.getElementById("sendEmail").addEventListener("click", openGmailCompose);
-});
-
     </script>
   </body>
 </html>

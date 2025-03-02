@@ -956,18 +956,18 @@ background-color: white;
         <div class="hero-contact-section-DFdjfs">
           <div class="hero-contact">
             <img src="/logo.png" alt="logo" class="logo-sdjsudD" />
-            <div class="hero-form-field-Sdsfj">
-              <input placeholder="Name" name="name" class="input-skjdgsjdD" />
-              <input placeholder="Phone Number" name="phone" class="input-skjdgsjdD" />
-              <input placeholder="Email" name="email" class="input-skjdgsjdD" />
+            <form method="post" action="./thank-you.html" class="hero-form-field-Sdsfj">
+              <input placeholder="Name" name="name" type="text" class="input-skjdgsjdD" required/>
+              <input placeholder="Phone Number" name="phone" class="input-skjdgsjdD" type="number" required/>
+              <input placeholder="Email" name="email" class="input-skjdgsjdD" type="email" required/>
               <textarea
                 placeholder="What are u looking for"
                 style="height: 20rem; padding-top: 2rem"
                 name="textarea"
                 class="input-skjdgsjdD"
               ></textarea>
-              <div style="display: flex;justify-content: center;"><button id="sendEmail">Send</button></div>
-            </div>
+              <div style="display: flex;justify-content: center;"><button type="submit" id="sendEmail">Send</button></div>
+            </form>
           </div>
         </div>
       </div>

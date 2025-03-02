@@ -725,6 +725,13 @@ background-color: white;
          .ccCDSCSFFWD{
           height: 21rem !important;
          }
+         .boooook{
+          width: 100% !important;
+         }
+         #loko2{
+          top: 0rem !important;
+          font-size: 1.3rem !important;
+         }
      }
 
      @media(max-width:400px){
@@ -965,7 +972,9 @@ background-color: white;
     .orangeVobosd{
       width: 29.5%;
     }
-    
+    .specification33{
+      width: 100%;
+    }
     </style>
   </head>
   <body>
@@ -981,8 +990,11 @@ background-color: white;
       <!-- dialog 1 end -->
        <!-- dialog 2 -->
        <div class="dialog dialog2">
-        <div class="dialog-content dialog-content2">
-          <img src="./dialoge2.jpg" alt="specification"/>
+        <div class="dialog-content dialog-content2" >
+          <div style="position: relative;width: 50%;" class="boooook" >
+            <div style="position: absolute;right: 1rem; top: 1rem;font-size: 1.5rem;cursor: pointer;" id="loko2">X</div>
+             <img src="./dialoge2.jpg" alt="specification" class="specification33"/>
+          </div>
         </div>
        </div>
       <!-- dialog 2 end -->
@@ -1355,8 +1367,9 @@ background-color: white;
        const sectionFeature3_label = document.getElementById("section_feature_3_label");
        const dialog1 = document.querySelector(".dialog1");
        const dialog2 = document.querySelector(".dialog2");
-       const dialog3 = document.querySelector(".dialog3");loko1
+       const dialog3 = document.querySelector(".dialog3");
        const dialog11 = document.querySelector("#loko1");
+       const dialog22 = document.querySelector("#loko2");
        const redLinkDgdksl = document.querySelector(".red-link-Dgdksl");
        const redLinkDgdksl2 = document.querySelector(".red-link-Dgdksl2");
        const redLinkDgdksl3 = document.querySelector(".red-link-Dgdksl3");
@@ -1434,7 +1447,7 @@ background-color: white;
         dialog1.style.display="flex";
        })
 
-       dialog2.addEventListener("click",()=>{
+       dialog22.addEventListener("click",()=>{
         dialog2.style.display="none";
        });
 

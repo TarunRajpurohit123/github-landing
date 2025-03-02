@@ -975,8 +975,9 @@ background-color: white;
     
     <div class="fluid-container fluid-extra-css">
       <!-- dialog 1 -->
-       <div class="dialog dialog1">
-        <div class="dialog-content">
+      <div class="dialog dialog1">
+        <div class="dialog-content" style="position: relative;">
+          <div style="position: absolute;right: 1rem; top: 1rem;font-size: 1.5rem;cursor: pointer;" id="loko1">X</div>
           <img src="./dialog1image.jpg" alt="specification"/>
         </div>
        </div>
@@ -1350,6 +1351,8 @@ background-color: white;
        const redLinkDgdksl = document.querySelector(".red-link-Dgdksl");
        const redLinkDgdksl2 = document.querySelector(".red-link-Dgdksl2");
        const redLinkDgdksl3 = document.querySelector(".red-link-Dgdksl3");
+       const dialog11 = document.querySelector("#loko1");
+
 
       //  thumbnail 1
        thumbSec1?.forEach((t,ind)=>{
@@ -1416,7 +1419,7 @@ background-color: white;
         })
        });
 
-       dialog1.addEventListener("click",()=>{
+       dialog11.addEventListener("click",()=>{
         dialog1.style.display="none";
        });
 
